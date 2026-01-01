@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تاريخ حنابله</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --red:#9e1b1b;
+    --light:#ffffff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+
+body{
+    font-family:"Amiri", serif;
+    color:#fff;
+    background:
+      linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.88)),
+      url("phonto.jpg") center/cover fixed no-repeat;
+}
+
+/* HERO */
+header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero{
+    max-width:1000px;
+    padding:80px;
+    border:3px solid #fff;
+    background:rgba(0,0,0,.6);
+}
+
+.hero h1{
+    font-family:"Cairo", sans-serif;
+    font-size:80px;
+    letter-spacing:7px;
+}
+
+.hero p{
+    margin:30px 0;
+    font-size:24px;
+    line-height:2.3;
+}
+
+.hero button{
+    padding:18px 65px;
+    font-size:18px;
+    font-family:"Cairo", sans-serif;
+    background:var(--red);
+    border:none;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* SECTIONS */
+section{
+    max-width:1250px;
+    margin:140px auto;
+    padding:0 30px;
+}
+
+.section-title{
+    font-family:"Cairo", sans-serif;
+    font-size:46px;
+    border-right:8px solid var(--red);
+    padding-right:20px;
+    margin-bottom:15px;
+}
+
+.accordion-content{
+    display:none;
+    background:rgba(0,0,0,.6);
+    border:1px solid rgba(255,255,255,.3);
+    padding:30px;
+    font-size:22px;
+    line-height:2.4;
+    margin-bottom:50px;
+}
+
+.section-button{
+    margin-top:15px;
+    padding:12px 40px;
+    font-family:"Cairo", sans-serif;
+    font-size:18px;
+    background:var(--red);
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+.list{margin-top:20px;line-height:2.2;}
+.list div{margin-bottom:10px;}
+
+/* FOOTER */
+footer{
+    background:#000;
+    padding:40px;
+    text-align:center;
+    border-top:4px solid var(--red);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+    <h1>تاريخ حنابله</h1>
+    <p>
+        تاريخٌ صُنع بالفعل لا بالقول،  
+        وسُطّر بالمواقف لا بالشعارات،  
+        وبقي شاهدًا على الهيبة عبر الأجيال.
+    </p>
+    <button onclick="document.getElementById('start').scrollIntoView({behavior:'smooth'})">
+        اكتشف التاريخ
+    </button>
+</div>
+</header>
+
+<section id="start">
+
+<!-- الهوية -->
+<div class="section-title">هوية حنابله</div>
+<button class="section-button" onclick="toggleContent('content1')">عرض التفاصيل</button>
+<div class="accordion-content" id="content1">
+حنابله كيانٌ تاريخي تَشكّل على أسسٍ من الشجاعة،
+والحكمة، وحفظ العهد، فكانت الهوية واضحة المعالم،
+قائمة على الصراحة في الموقف، والثبات عند الشدائد،
+والتماسك الداخلي الذي لا يتزعزع.
+</div>
+
+<!-- المؤسسون -->
+<div class="section-title">المؤسسون</div>
+<button class="section-button" onclick="toggleContent('content2')">عرض التفاصيل</button>
+<div class="accordion-content" id="content2">
+تأسس هذا الكيان على يد رجالٍ امتلكوا
+الرؤية والبأس، فكانوا اللبنة الأولى لمسيرةٍ
+امتدت آثارها عبر الزمن.
+<div class="list">
+    <div>• بن ناصر الثبيتي الروقي العتيبي</div>
+    <div>• عقيد البشري الحربي</div>
+    <div>• أبو عتب</div>
+    <div>• أبو مشعل</div>
+    <div>• سالم فارس البريكي</div>
+</div>
+</div>
+
+<!-- الغزوات -->
+<div class="section-title">تاريخ حنابله وغزواتهم</div>
+<button class="section-button" onclick="toggleContent('content3')">عرض التفاصيل</button>
+<div class="accordion-content" id="content3">
+شارك حنابله في عددٍ كبير من الوقائع،
+وكانت الغلبة في معظمها لهم، لما عُرف عنهم
+من تنظيم الصف، وحسن القيادة، وقوة القرار.
+
+<div class="list">
+<div>1- وقعة راية العز</div>
+<div>2- يوم السيف المصلت</div>
+<div>3- معركة الهيبة الكبرى</div>
+<div>4- وقعة كسر الطغيان</div>
+<div>5- يوم الردع العظيم</div>
+<div>6- معركة الصف المنيع</div>
+<div>7- وقعة الفجر الأحمر</div>
+<div>8- يوم الحزم الأول</div>
+<div>9- معركة العهد الثابت</div>
+<div>10- وقعة سهل الكرامة</div>
+<div>11- يوم الصقور</div>
+<div>12- معركة كسر الحصار</div>
+<div>13- وقعة لواء الشرف</div>
+<div>14- يوم الفصل</div>
+<div>15- معركة توحيد الصف</div>
+<div>16- وقعة درع الديار</div>
+<div>17- يوم الحسم</div>
+<div>18- معركة التمكين</div>
+<div>19- وقعة السور المنيع</div>
+<div>20- يوم المجد المتجدد</div>
+</div>
+</div>
+
+<!-- الإنجازات -->
+<div class="section-title">إنجازات حنابله</div>
+<button class="section-button" onclick="toggleContent('content4')">عرض التفاصيل</button>
+<div class="accordion-content" id="content4">
+من أبرز إنجازات حنابله:
+ترسيخ الأمن في محيطهم،  
+حماية الأرض والديار،  
+توحيد الصف الداخلي،  
+فرض الهيبة بين الكيانات المحيطة،  
+القدرة على الحسم عند النزاع،  
+الحفاظ على العهد والمواثيق،  
+نصرة المظلوم،  
+ردع المعتدي،  
+بناء سمعة تاريخية قائمة على القوة والعدل،  
+الاستمرارية رغم تغير الأزمنة،  
+وتحويل الاسم إلى رمزٍ للثبات والاحترام.
+</div>
+
+<!-- المكانة -->
+<div class="section-title">مكانتهم التاريخية</div>
+<button class="section-button" onclick="toggleContent('content5')">عرض التفاصيل</button>
+<div class="accordion-content" id="content5">
+احتل حنابله مكانةً رفيعة،
+فلم يكونوا طارئين في التاريخ،
+بل أصحاب أثرٍ واضح، يُحسب لهم الحساب،
+وتُقدّر لهم المواقف، لما عُرف عنهم
+من رجاحة العقل وقوة الفعل.
+</div>
+
+<!-- الإرث -->
+<div class="section-title">الإرث والامتداد</div>
+<button class="section-button" onclick="toggleContent('content6')">عرض التفاصيل</button>
+<div class="accordion-content" id="content6">
+لم يكن تاريخ حنابله مرحلةً وتنتهي،
+بل إرثًا متصلًا، تنتقل قيمه من جيلٍ إلى جيل،
+ليبقى الاسم حاضرًا، والموقف ثابتًا،
+والهيبة راسخة لا تزول.
+</div>
+
+<!-- القوانين -->
+<div class="section-title">قوانين حنابله</div>
+<button class="section-button" onclick="toggleContent('content7')">عرض التفاصيل</button>
+<div class="accordion-content" id="content7">
+<div class="list">
+<div>• احترام كرامة الأعضاء: يُمنع أي تصرّف يسيء إلى عضو أو يجرح كرامته، بما في ذلك السبّ والشتم والسخرية أو التقليل من قيمته.</div>
+<div>• تحريم المساس بالأهل والأقارب: لا يُسمح بأي ذكرٍ مسيء للأهل أو الأقارب أو المحارم تحت أي ظرف. المخالفة تُعدّ جريمة صارخة.</div>
+<div>• اللغة الطاهرة فقط: يمنع استخدام ألفاظ فاحشة، نابية، أو خادشة للحياء. كل كلمة تُعدّ انتهاكًا لقواعد السيرفر.</div>
+<div>• التحرش والمضايقات: أي محاولة للتحرش اللفظي، أو الإزعاج المتعمد، أو الملاحقة المستمرة ستؤدي إلى العقوبة الفورية.</div>
+<div>• منع المحتوى المحظور: يُحظر نشر أي مواد جنسية، إباحية، أو روابط خادعة أو ضارة.</div>
+<div>• الخصوصية والأمان: يحظر نشر أي معلومات شخصية عن الأعضاء، سواء أكانت حقيقية أم متخيّلة، من دون إذن صريح.</div>
+<div>• منع التمييز والكراهية: كل سلوك عنصري، ديني، جنسي، أو أي نوع من التمييز غير مقبول إطلاقًا.</div>
+<div>• حفظ النظام والانضباط: أي سلوك يخل بالنظام العام للسيرفر، أو يثير الفوضى، سيُعاقب بلا هوادة.</div>
+<div>• العقوبات: كل مخالفة تُسجَّل، والعقوبة تتدرج بين التحذير، الإيقاف المؤقت، أو الطرد النهائي بلا نقاش.</div>
+<div>• الانضباط واجب الجميع: الالتزام بالقوانين واجب على كل عضو، وعدم الامتثال يعني الاستسلام لعقوبة صارمة فورًا.</div>
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 — تاريخ حنابله | إرثٌ لا يبهت
+</footer>
+
+<script>
+function toggleContent(id){
+    const content = document.getElementById(id);
+    content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+
+</body>
+</html>
